@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Venda</title>
+    <meta charset="utf-8">
+    <script src= "js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1>Minha Loja </h1>
+</header>
+<main>
+<div class="title">
+    <h2>Produtos</h2>
+    <span>Lista de produtos da minha loja.</span>
+</div>
+<div class="card">
+<div class="lineinput">
+<label>Produto</label>
+<input type="text" id="produto" placeholder="Nome do Produto">
+</div>
+<div class="lineinput">
+    <label>Valor</label>
+    <input type="text" id="valor" placeholder="valor do produto">
+    </div>
+<button onclick="produto.adicionar()">Adicionar</button>
+<button onclick="produto.excluir()">excluir</button>
+</div>
+<div class="content">
+<table border="1">
+    <thead>
+        <th class="center">ID</th>
+        <th>Produto</th>
+        <th>valor</th>
+        <th class="center">Ações</th>
+        <tbody>
+            <tr>
+            <td class="center">1</td>
+            <td>Mesa de estar</td>
+            <td>1900</td>
+            <td class="center">
+                <img src="img/edit.svg" alt="">
+                <img src="img/delete.svg" alt="">
+            </td>
+            </tr>
+            <td class="center">1</td>
+            <td>Mesa de estar</td>
+            <td>1900</td>
+            <td class="center">
+                <img src="img/edit.svg" alt="">
+                <img src="img/delete.svg" alt="">
+            </td>
+            </tr>
+            <td class="center">1</td>
+            <td>Mesa de estar</td>
+            <td>1900</td>
+            <td class="center">
+                <img src="img/edit.svg" alt="">
+                <img src="img/delete.svg" alt="">
+            </td>
+            </tr>
+        </tbody>
+    </thead>
+</table>
+</div>
+</main>   
+</body>
+</html>
