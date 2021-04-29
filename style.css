@@ -1,74 +1,70 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Venda</title>
-    <meta charset="utf-8">
-    <script src= "js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-<h1>Minha Loja </h1>
-</header>
-<main>
-<div class="title">
-    <h2>Produtos</h2>
-    <span>Lista de produtos da minha loja.</span>
-</div>
-<div class="card">
-<div class="lineinput">
-<label>Produto</label>
-<input type="text" id="produto" placeholder="Nome do Produto">
-</div>
-<div class="lineinput">
-    <label>Valor</label>
-    <input type="text" id="valor" placeholder="valor do produto">
-    </div>
-<button onclick="produto.adicionar()">Adicionar</button>
-<button onclick="produto.excluir()">excluir</button>
-</div>
-<div class="content">
-<table border="1">
-    <thead>
-        <th class="center">ID</th>
-        <th>Produto</th>
-        <th>valor</th>
-        <th class="center">Ações</th>
-        <tbody>
-            <tr>
-            <td class="center">1</td>
-            <td>Mesa de estar</td>
-            <td>1900</td>
-            <td class="center">
-                <img src="img/edit.svg" alt="">
-                <img src="img/delete.svg" alt="">
-            </td>
-            </tr>
-            <td class="center">1</td>
-            <td>Mesa de estar</td>
-            <td>1900</td>
-            <td class="center">
-                <img src="img/edit.svg" alt="">
-                <img src="img/delete.svg" alt="">
-            </td>
-            </tr>
-            <td class="center">1</td>
-            <td>Mesa de estar</td>
-            <td>1900</td>
-            <td class="center">
-                <img src="img/edit.svg" alt="">
-                <img src="img/delete.svg" alt="">
-            </td>
-            </tr>
-        </tbody>
-    </thead>
-</table>
-</div>
-</main>   
-</body>
-</html>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Roboto', sans-serif; 
+background-color: #f0f1f1; 
+}
+header{
+background-color: black;
+padding: 10px;
+color: #fff;
+text-align: center;
+}
+main{
+padding: 30px 50px;
+}
+/*classe card,para mexer com classe colocamos .*/
+.card{
+background-color: #fff;
+border: 1px solid #c4c4c4;
+padding: 20px;
+margin-top: 15px;
+border-radius: 5px;
+}
+.lineinput{
+display: grid;
+margin-top: 10px;
+}
+input{
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+outline: 0;
+}
+button{
+border: 0;
+padding: 10px;
+outline: 0;
+border-radius: 3px;
+background-color:#c4c4c4;
+font-weight: bold;
+transition: all ease 0.3s;
+}
+button:hover{
+background-color:#c4c4c4a8;   
+}
+.content{
+margin-top: 15px;
+}
+table{
+border-collapse: collapse;
+border: 1px solid #ccc;
+width: 100%;
+}
+table th{
+background-color: rgb(214,214,214);
+
+}
+table th ,td{
+text-align: left;
+    padding: 1px 5px;
+    }
+table td img {
+width: 22px;
+}
+.center{
+text-align: center;
+}
