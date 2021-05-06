@@ -26,11 +26,11 @@
     </div>
 
         <div class="lineinput">
-        <label>Valor</label> 
-        <input type="text" id="valor" placeholder="Valor do Produto">  
+        <label>Preço</label> 
+        <input type="text" id="preco" placeholder="Valor do Produto">  
         </div>
-<button onclick="produto.Adicionar()">Adicionar</button>
-<button onclick="produto.excluir()">excluir</button>
+<button onclick="produto.salvar()">Salvar</button>
+<button onclick="produto.cancelar()">Cancelar</button>
 </div><!--card-->
 <div class="content">
   <table border="1">
@@ -40,26 +40,12 @@
           <th>Valor</th>
          <th class="center">Ações</th>
       </thead>
-      <tbody>
-          <tr>
-        <td class="center">1</td>
-    <td>Mesa de sala de estar</td>
-    <td>2000</td>
-    <td class="center">
-    <img src="img/edit.png">
-    <img src="img/delete.png">     
-        </tr>
-        <tr>
-        <td class="center">1</td>
-        <td>Mesa de sala de estar</td>
-        <td>2000</td>
-        <td class="center">
-        <img src="img/edit.png">
-        <img src="img/delete.png">     
-            </tr>
+      <tbody id="tbody">
+  
       </tbody>
   </table>  
 </div>
 </main>
 </body>
 </html>
+<!--tr linha da tabela /td coluna da tabela-->
